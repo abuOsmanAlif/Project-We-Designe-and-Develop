@@ -1,0 +1,138 @@
+* {
+  list-style: none;
+}
+
+body {
+  background: #fff;
+}
+
+#home {
+  background: url("../img/laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 600px;
+}
+
+.navbar {
+  background: #fff;
+}
+
+.navbar .nav-link:hover {
+  color: #000;
+}
+
+#progress {
+  background: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.skills {
+  margin: 60px;
+  color: black;
+  width: 400px;
+}
+
+.skills li {
+  margin: 25px 0;
+}
+
+.bar {
+  background: #d8d8d8;
+  display: block;
+  height: 3px;
+  border: 1px solid #d8d8d8;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: aqua;
+}
+
+.html {
+  width: 90%;
+  -webkit-animation: html 2s;
+          animation: html 2s;
+}
+
+.css {
+  width: 65%;
+  -webkit-animation: css 2s;
+          animation: css 2s;
+}
+
+.ph {
+  width: 48%;
+  -webkit-animation: ph 2s;
+          animation: ph 2s;
+}
+
+#items {
+  color: white;
+}
+
+#items .fa {
+  font-size: 50px;
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes ph {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 48%;
+  }
+}
+
+@keyframes ph {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 48%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

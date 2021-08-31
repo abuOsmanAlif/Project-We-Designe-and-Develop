@@ -5,6 +5,7 @@ npm<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/uikit.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="navbar-fixed.css">
@@ -24,7 +25,7 @@ npm<!DOCTYPE html>
       <div class="collapse navbar-collapse" id="navbarnav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link active text-info" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
@@ -36,13 +37,21 @@ npm<!DOCTYPE html>
             <a class="nav-link" href="#process">Process</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#service">Service</a>
+            <a class="nav-link" href="#formsection">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#testimonial">Testimonial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span id="hh" class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+                <input for="hh" type="text" placeholder="Search" class="form-control">
+              </div>
+            </div>
+          </form>
           </li>
         </ul>
       </div>
@@ -54,10 +63,10 @@ npm<!DOCTYPE html>
       <div class="container">
         <div class="row">
           <div class="col-md-6"></div>
-        <div class="col-md-6 mt-5" justify-contert-center>
-          <h2>We Design and Develop</h2>
+        <div id="hello" class="col-md-6">
+          <h2 class="mt-5">We Design and Develop</h2>
           <p style="font-size:15px">we are a new design studio in USA.We have over 20 years of combined experience,and know a thing or two about website designing and apps development.</p>
-            <a href="#" class="btn btn-info">Contact Us</a>
+            <a href="#formsection" class="btn btn-info">Contact Us</a>
         </div>
         </div>
       </div>
@@ -65,37 +74,61 @@ npm<!DOCTYPE html>
   </section>
 
   <!--ABOUT SECTIONS-->
-  <section id="about" class="bg-light py-5 text-center">
+  <section id="about" class="py-5 text-center">
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-md-12">
           <h2 class="pb-2">About Us</h2>
           <p class="lead">Divide have don't man wherein air fourth. Own itself make have night won't make.A you under seed appear which good give air without fowl moveth dry first heaven fruit.Dominion she'd won't very all.</p>
+        </div>
+        <div class="col-md-12">
+          <img src="img\hello_1920x1080.jpg" class="img-fluid" alt="signature">
         </div>
       </div>
     </div>
   </section>
 
   <!--PROGRESS SECTION-->
-  <section id="progress" class="py-5 text-light">
+  <section id="progress" class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col">
-          <div class="skills">
-            <h1>My Skills</h1>
-            <li>
-              <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
-            </li>
-            <li>
-              <h3>Css</h3><span class="bar"><span class="css"></span></span>
-            </li>
-            <li>
-              <h3>Python</h3><span class="bar"><span class="ph"></span></span>
-            </li>
-
+        <div class=" col-md-6 col-sm-12">
+        <div class="card bg-info">
+         <div class="card-body text-center">
+         <img src="img/image6.jpeg" class="rounded-circle img-fluid align-self-center" alt="">
+         <h2>Abu Osman</h2>
+         <h4>Web Designer</h4>
+         <h5>Hi im Abu osman. I design and devoloped dynamic websites for small and medium  business.</h5>
+         <p>I started web design and development about 6 years ago and have enjoyed working as a freelancer  for the past 3 years. I am currently avaiable for freelance work, if your would like to hire me please use the contact form below to get in touch with me.</p>
+         <div class="d-flex flex-row justify-content-center">
+           <div class="p-4">
+             <a href="#"><i class="fa fa-facebook"></i></a>
+           </div>
+           <div class="p-4">
+             <a href="#"><i class="fa fa-twitter"></i></a>
+           </div>
+           <div class="p-4">
+             <a href="#"><i class="fa fa-linkedin"></i></a>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="skills">
+              <h1 class="text-dark">My Skills</h1>
+              <li>
+                <h4 class="text-dark">UI/UX DESIGN  90%</h4><span class="bar"><span class="html"></span></span>
+              </li>
+              <li>
+                <h4 class="text-dark">WEB DEVELOPMENT 75%</h4><span class="bar"><span class="css"></span></span>
+              </li>
+              <li>
+                <h4 class="text-dark">MARKETING  50%</h4><span class="bar"><span class="ph"></span></span>
+              </li>
+          </div>
           </div>
         </div>
-      </div>
     </div>
   </section>
   <!--ITEMS SECTION-->
@@ -103,22 +136,22 @@ npm<!DOCTYPE html>
     <div class="container">
       <div class="row">
         <div class="col-md 3">
-          <i class="fa fa-check"></i>
+          <i class="fa fa-suitcase"></i>
           <h5>578</h5>
            <p>Project completed</p>
         </div>
         <div class="col-md-3">
-          <i class="fa fa-check"></i>
+          <i class="fa fa-clock"></i>
           <h5>1462</h5>
           <p>Working Hour</p>
         </div>
         <div class="col-md-3">
-          <i class="fa fa-check"></i>
+          <i class="fa fa-star"></i>
           <h5>600</h5>
           <p>Positive Feedback</p>
         </div>
         <div class="col-md-3">
-          <i class="fa fa-check"></i>
+          <i class="fa fa-heart"></i>
           <h5>756</h5>
           <p>Happy client</p>
         </div>
@@ -128,31 +161,30 @@ npm<!DOCTYPE html>
 
 
   <!--Photos Section-->
-  <section uk-lightbox id="photos" class="bg-light py-5">
-    <div class="container">
+  <section uk-lightbox id="photos">
       <div class="row p-0">
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
               <img src="img/image1.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
-        <div class="col-md-3 py-3 ">
+        <div class="col-md-3 px-0 ">
           <div>
             <a href="#">
               <img src="img/image2.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
               <img src="img/image3.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
               <img src="img/image1.jpeg" alt="one img" class="img-fluid">
@@ -161,108 +193,219 @@ npm<!DOCTYPE html>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
               <img src="img/image3.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
-              <img src="img/image6.jpeg" alt="one img" class="img-fluid">
+              <img src="img/image7.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
-        <div class="col-md-3 py-3">
-          <div>
-            <a href="#">
-              <img src="img/image3.jpeg" alt="one img" class="img-fluid">
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 py-3">
+        <div class="col-md-3 px-0">
           <div>
             <a href="#">
               <img src="img/image2.jpeg" alt="one img" class="img-fluid">
             </a>
           </div>
         </div>
+        <div class="col-md-3 px-0">
+          <div>
+            <a href="#">
+              <img src="img/image3.jpeg" alt="one img" class="img-fluid">
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
+
   </section>
   <!--LOGOS SECTION-->
 <section id="logos" class="text-center py-5 bg-light">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-diamond"></i>
         <h5>UI/UX design</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-500px"></i>
         <h5>WEB DEVELOPMENT</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-mobile"></i>
         <H5>APPS/MOBILE</H5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-gamepad"></i>
         <H5>GAMES</H5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-plane"></i>
         <h5>SEO/MARKETING</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-star"></i>
         <h5>PHOTGRAPHY</h5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-magic"></i>
         <H5>GRAPHICS DESIGN</H5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
       <div class="col-md-3">
-        <i class="fa fa-check"></i>
+        <i class="fa fa-tint"></i>
         <H5>ILLUSTRATION</H5>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
   </div>
 </section>
-<!--Form section-->
-<section id="formsection" class="text-light text-center">
+<!--Description Section-->
+
+<div id="slider1" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+  <li class="active" data-target="#slider1" data-slide-to="0"></li>
+  <li data-target="#slider1" data-slide-to="1"></li>
+  <li data-target="#slider1" data-slide-to="2"></li>
+</ul>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active ">
+      <div class="bg-info"></div>
+    <div class="carousel-caption">
+      <h5>Outstanding job and exceeded all expectations.It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap. </h5>
+      <p>Abu Osman</p>
+    </div>
+    </div>
+    <div class="carousel-item">
+      <div class="bg-dark"></div>
+      <div class="carousel-caption">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sit praesentium error dignissimos, veritatis, eius enim assumenda iure libero eos, quas, earum adipisci incidunt sapiente!</h5>
+        <p>Abu Osman</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="bg-success "></div>
+      <div class="carousel-caption">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum eum, aspernatur iste. Facere dolorem laborum unde, impedit perferendis, ut voluptate in quia excepturi architecto libero at, minima nemo enim ducimus.. </h5>
+        <p>Abu Osman</p>
+      </div>
+    </div>
+  </div>
+  <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a href="#slider1" class="carousel-control-next" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!--LOGOS SECTION-->
+<section id="names" class="py-0 d-none d-lg-block">
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h3>Need A Project</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni at reprehenderit quasi?</p>
+      <div class="col-md-3">
+        <img src="img/logo1.jpg" alt="logo">
       </div>
-      <div class="col-md-12">
-        <form class="form-inline justify-content-center">
-          <input type="text" placeholder="Your Name" class="form-control mr-2">
-          <input type="email" placeholder="Email" class="form-control">
-        </form>
+      <div class="col-md-3">
+        <img src="img/logo2.png" alt="logo">
+      </div>
+      <div class="col-md-3">
+        <img src="img/logo3.jpg" alt="logo">
+      </div>
+      <div class="col-md-3">
+        <img src="img/logo4.jpg" alt="logo">
       </div>
     </div>
   </div>
 </section>
 
+<!--Form section-->
+<section id="formsection" class="text-center py-5">
+  <div class="container">
+    <form action="#" method="post" class="mx-5">
+      <h3>Need A Project?</h3>
+      <p>
+        Let us know what you are looking for an agency.We'll take a look <br> and see if this could be the start of something beautiful.
+      </p>
+      <div class="form-group mx-5">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 mb-sm-2 mb-2">
+              <input width="50%" type="text" placeholder="Your Name" class="form-control" required>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <input type="email" placeholder="Email" class="form-control" required>
+        </div>
+        </div>
+      </div>
+      <div class="form-group mx-5">
+        <input type="text" placeholder="Your Title" class="form-control" required>
+      </div>
+      <div class="form-group mx-5">
+        <textarea placeholder="Your Messege" rows="5" class="form-control" required></textarea>
+      </div>
+      <button class="btn btn-info">Send Message</button>
+    </form>
+  </div>
+</section>
 
+<section id="footer-section" class="bg-dark text-light py-5 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Pinroll design,Inc.</h4>
+        <p class="mb-0"><span>&copy</span>2021 pinroll.All right Reserverd.</p>
+        <span>Designed by <a href="#">Abu Osman</a></span>
+      </div>
+      <div class="col-md-3">
+       <p>Hello @ pinroll theme.com</p>
+       <span>+420 5898815 53</span>
+      </div>
+      <div class="col-md-3">
+        <p class="mb-0">product </p>
+        <p class="mb-0">news</p>
+        <p class="mb-0">service</p>
+        <p class="mb-0">career</p>
+       </div>
+    </div>
+  </div>
+</section>
 
+<footer id="foreverthis" class="text-center py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-3">
+        <i class="fa fa-facebook icon mr-2"></i>
+        <a href="#">facebook</a>
+      </div>
+      <div class="col-md-3 col-3">
+        <i class="fa fa-twitter  mr-2"></i>
+        <a href="#">twitter+</a>
 
-
+      </div>
+      <div class="col-md-3 col-3">
+        <i class="fa fa-Linkedin mr-2"></i>
+          <a href="#">Linkedin</a>
+      </div>
+      <div class="col-md-3 col-3">
+        <i class="fa fa-Instagram mr-2"></i>
+        <a href="#">Instagram</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -272,5 +415,14 @@ npm<!DOCTYPE html>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/uikit.min.js"></script>
 <script src="js/uikit-icons.js"></script>
+
+<script>
+  $('.carousel').carousel({
+    interval:2000,
+    pause:'hover',
+    wrap:true,
+    keyboard:true,
+  });
+</script>
 </body>
 </html>
