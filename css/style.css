@@ -1,9 +1,6 @@
 * {
   list-style: none; }
 
-body {
-  background: #fff; }
-
 #home {
   background: url("../img/laptop.png");
   background-repeat: no-repeat;
@@ -67,7 +64,7 @@ body {
     font-size: 22px; }
 
 #photos {
-  background: #fff; }
+  background: #c4c2c2; }
 
 #logos i {
   font-size: 40px; }

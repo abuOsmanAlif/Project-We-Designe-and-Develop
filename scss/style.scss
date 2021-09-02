@@ -2,9 +2,6 @@ $font-size:50px;
 *{
   list-style:none;
 }
-body{
-  background: #fff;
-}
 #home{
   background:url('../img/laptop.png');
   background-repeat:no-repeat;
@@ -83,7 +80,7 @@ body{
   }
 }
 #photos{
-  background:#fff;
+  background:#c4c2c2;
 }
 #logos{
   i{
@@ -220,6 +217,7 @@ body{
       margin-left:-45px;
     }
   }
+
   #foreverthis{
     i{
       font-size:20px;
